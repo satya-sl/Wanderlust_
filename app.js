@@ -10,7 +10,7 @@ const {listingSchema , reviewSchema} = require('./schema.js')
 const Review = require("./models/review.js");
 
 
-//const listings = require("./routes/listing.js");
+//const listings = require("./routes/listing.js");  as commented i didn't required "routes"(folder)
 
 
 
@@ -141,9 +141,6 @@ app.delete("/listings/:id", wrapAsync(async (req,res)=>{
     console.log(deletedListing);
     res.redirect("listings");
 }))
-
-
-
 
 
 
