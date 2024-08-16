@@ -1,0 +1,95 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white !important;
+}
+/* for icon styling*/
+.fa-compass{
+   color: #fe424d; 
+   font-size: 2rem;
+}
+.nav-link {
+    
+    color: #222222  !important;   /*important because to overide if any styling ocurs on it*/
+}
+
+/*footer*/
+.f-info-socials{
+    font-size: 1.2rem;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info{
+    background-color: #ebebeb;
+    height: 6.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*card*/
+.listing-card{
+    margin: 2rem !important ;
+    border: none !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.listing-links{
+    text-decoration: none;
+}
+/*
+.card-img-overlay{
+    opacity: 0; to make it no diplay like
+}*/
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+
+
+/* new page (new.ejs)*/
+.add-btn{
+    background-color:  #fe424d !important;
+    border: none !important;
+}
+/* edit page (edit.ejs)*/
+.edit-btn{
+    background-color:  #fe424d !important;
+    border: none !important;
+}
+/* show page (show.ejs)*/
+
+.show-img{
+    object-fit: cover !important ;
+    height: 30vh !important;               
+}
+.btns{
+    display: flex;
+}
+
+/*error.ejs*/
+.alert-heading{
+    text-align: center;
+}

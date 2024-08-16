@@ -1,0 +1,23 @@
+<% if(success && success.length ){ %>         <!-- success is array it exists so always true-->
+                                            <!-- success.length is array lenght says 0 if nothing there(false)-->
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+        <%= success %>
+        <button type="button" 
+        class="btn-close" 
+        data-bs-dismiss="alert"
+        aria-label="Close"
+        ></button>  <!--  x  -->
+    </div>
+<% } %>
+
+
+<% if(errors && errors.length ){ %>         
+<div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+<%= errors %>
+<button type="button" 
+class="btn-close" 
+data-bs-dismiss="alert"
+aria-label="Close"
+></button>  <!--  x  -->
+</div>
+<% } %>
